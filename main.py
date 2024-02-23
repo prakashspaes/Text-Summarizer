@@ -2,7 +2,7 @@ from TextSummarizer.pipeline.stage01_data_ingestion import DataIngestionTraining
 from TextSummarizer.pipeline.stage02_data_validation import DataValidationTrainingPipeline
 from TextSummarizer.pipeline.stage03_data_transformation import DataTransformationTrainingPipeline
 from TextSummarizer.pipeline.stage04_model_trainer import ModelTrainerTrainingPipeline
-from TextSummarizer.pipeline.stage04_model_trainer import ModelEvaluationTrainingPipeline
+from TextSummarizer.pipeline.stage05_model_evaluation import ModelEvaluationTrainingPipeline
 from TextSummarizer.logging import logger
 
 STAGE_NAME = "Data Ingestion stage"

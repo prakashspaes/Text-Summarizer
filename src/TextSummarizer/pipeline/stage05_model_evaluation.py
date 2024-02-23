@@ -1,5 +1,5 @@
 from TextSummarizer.config.configuration import ConfigurationManager
-from TextSummarizer.conponents.model_evaluation import ModelEvaluation
+from TextSummarizer.components.model_evaluation import ModelEvaluation
 from TextSummarizer.logging import logger
 
 
