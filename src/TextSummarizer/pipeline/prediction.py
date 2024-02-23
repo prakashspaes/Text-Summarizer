@@ -2,6 +2,7 @@ from TextSummarizer.config.configuration import ConfigurationManager
 from transformers import AutoTokenizer
 from transformers import pipeline
 
+#testing
 class PredictionPipeline:
     def __init__(self):
         self.config = ConfigurationManager().get_model_evaluation_config()
