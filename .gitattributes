@@ -1,3 +1,0 @@
-model_part_aa filter=lfs diff=lfs merge=lfs -text
-model_part_ab filter=lfs diff=lfs merge=lfs -text
-model_part_ac filter=lfs diff=lfs merge=lfs -text
