@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Summarization</title>
+    <script>
+        function adjustTextArea() {
+            var textArea = document.getElementById("textArea");
+            textArea.style.height = "1px";
+            textArea.style.height = (25 + textArea.scrollHeight) + "px";
+        }
+    </script>
 </head>
-<body>
+<body onload="adjustTextArea()">
     <h1>Text Summarization</h1>
-    <form action="/summarize" method="post">
-        <textarea name="text" rows="10" cols="50" placeholder="Enter text to summarize"></textarea>
-        <br>
+    <form action="/predict" method="post">
+        <textarea id="textArea" name="text" rows="10" cols="50" oninput="adjustTextArea()"></textarea><br>
         <input type="submit" value="Summarize">
     </form>
 </body>

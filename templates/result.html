@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Summarization Result</title>
+</head>
+<body>
+    <h1>Text Summarization Result</h1>
+    <h2>Original Text:</h2>
+    <p>{{ text }}</p>
+    {% if summary %}
+    <h2>Summary:</h2>
+    <p>{{ summary }}</p>
+    {% endif %}
+    {% if message %}
+    <h2>{{ message }}</h2>
+    {% endif %}
+</body>
+</html>
